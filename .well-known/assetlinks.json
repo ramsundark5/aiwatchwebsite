@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.smartcam",
+    "sha256_cert_fingerprints":
+    ["66:1D:F2:A5:A4:6A:C3:73:5A:2B:3D:35:93:E3:A9:4D:7F:F1:EE:E0:0F:8A:BE:98:F9:96:27:00:5B:33:E2:A0"]
+  }
+}]
