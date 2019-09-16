@@ -46,6 +46,11 @@
       .padding-bottom{
           padding-bottom: 1.25rem;
       }
+
+      .section-padding{
+        padding-top: 0; 
+        padding-bottom: 1.25rem
+      }
   </style>
 </head>
 
@@ -57,8 +62,100 @@
         </div>
     </nav>
     
-    <!--Install smartapp-->
+    <!--Integration steps-->
     <section class="download" id="install_smartapp">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2 class="section-heading">Smartthings integration steps</h2>
+                <div class="list-group">
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">1. Add virtual switch</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">2. Install aiwatch smartapp</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">3. Enable oauth for smartapp.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">4. Authorize smartthings integration via aiwatch mobile app</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Add virtual switch-->
+    <section class="section-padding" id="add_virtual_switch">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2 class="section-heading">Add virtual switch</h2>
+                <div class="list-group">
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">1. Open the SmartThings Classic app on your mobile device.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">2. Tap the <b>Marketplace</b> icon at the bottom of the screen. If you are in a Room or Device within the app you will need to go back to <b>My Home</b>.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">3. Tap the <b>SmartApps</b> header at the top of the page.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">4. Scroll down and tap <b>More</b>.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">5. Scroll down and tap <b>Virtual Device Creator</b>.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">6. Select type of device as <b>Virtual Switch</b>.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">7. Select your hub.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">8. Type device name as <b>aiwatch sensor</b>.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">9. Tap <b>Save</b> on top right header.</h5>
+                        </div>
+                        <img src="img/smartthings/VirtualSwitch.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Install smartapp-->
+    <section class="section-padding" id="install_smartapp">
         <div class="container">
             <div class="row">
             <div class="col-md-8 mx-auto">
@@ -66,7 +163,7 @@
                 <div class="list-group">
                     <div class="padding-bottom">
                         <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">1. Login to the SmartThings IDE.</h5>
+                        <h5 class="mb-1">1. Login to the <a href="https://graph.api.smartthings.com/" target="_blank">SmartThings IDE</a>.</h5>
                         </div>
                     </div>
                     <div class="padding-bottom">
@@ -89,7 +186,7 @@
                     </div>
                     <div class="padding-bottom">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">5. Copy all of the code from the webCore.groovy file into the box.</h5>
+                            <h5 class="mb-1">5. Copy all of the code from the <a href="https://raw.githubusercontent.com/ramsundark5/SmartThingsPublic/master/smartapps/smartthings/aiwatch-camera.src/aiwatch-alert.groovy" target="_blank"> aiwatch-alert.groovy</a> file into the box.</h5>
                         </div>
                     </div>
                     <div class="padding-bottom">
@@ -116,7 +213,7 @@
     </section>
     
     <!--Enable oauth-->
-    <section style="padding: 0" id="enable_oauth">
+    <section class="section-padding" id="enable_oauth">
         <div class="container">
             <div class="row">
             <div class="col-md-8 mx-auto">
@@ -130,7 +227,7 @@
                     </div>
                     <div class="padding-bottom">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">2. Click the edit button to the left of <b>ady624 : webCoRE</b>, it looks like a rounded square with a pencil in it.</h5>
+                            <h5 class="mb-1">2. Click the edit button to the left of <b>smartthings : aiwatch camera integration</b>, it looks like a rounded square with a pencil in it.</h5>
                         </div>
                         <img src="img/smartthings/EditSmartapp.jpg" class="img-fluid" alt="">
                     </div>
@@ -150,6 +247,32 @@
                         </div>
                         <img src="img/smartthings/Oauth.jpg" class="img-fluid" alt="">
                     </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">6. Now the oauth details will be displayed.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">7. Type Redirect URI as <b>com.aiwatch.oauth:/oauthredirect</b>.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">7. Type Display Name as <b>aiwatch</b>.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">5. Click the <b>Update</b> button again at the bottom of the page.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">4. Copy <b>Client ID</b> and <b>Client Secret</b>, they will be used later.</h5>
+                        </div>
+                        <img src="img/smartthings/Oauthsetup.png" class="img-fluid" alt="">
+                    </div>
                 </div>
             </div>
             </div>
@@ -157,7 +280,7 @@
     </section>
 
     <!--Install aiwatch in smartthings app-->
-    <section style="padding: 0" id="enable_oauth">
+    <section class="section-padding" id="install_smartapp">
         <div class="container">
             <div class="row">
             <div class="col-md-8 mx-auto">
@@ -185,15 +308,88 @@
                     </div>
                     <div class="padding-bottom">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">5. Scroll down until you find aiwatch and tap it.</h5>
+                            <h5 class="mb-1">5. Scroll down until you find <b>aiwatch camera integration</b> and tap it.</h5>
                         </div>
-                        <img src="img/smartthings/Oauth.jpg" class="img-fluid" alt="">
+                        <img src="img/smartthings/MyAppAiwatch.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">6. Select <b>aiwatch sensor</b> as device for <b>Which</b>. This is the virtual switch you added at the beginning./h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">6. Type <b>Aiwatch Motion Detect</b> for <b>Assign a name</b>.</h5>
+                        </div>
+                        <img src="img/smartthings/SetAiwatchSmartapp.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">9. Tap <b>Save</b> on top right header.</h5>
+                        </div>
                     </div>
                 </div>
             </div>
             </div>
         </div>
     </section>
+
+    <!--Integrate aiwatch and smartthings-->
+    <section class="section-padding" id="install_smartapp">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2 class="section-heading">Integrate aiwatch and smartthings</h2>
+                <div class="list-group">
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">1. Open <b>aiwatch</b> mobile app.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">2. Tap the <b>Settings</b> icon at the bottom of the screen.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">3. Under <b>Connect Smartthings</b> setting, fill <b>Client Id</b> and <b>Client Secret</b> copied from Step 4 of <b>Enable Oauth</b> section</h5>
+                        </div>
+                        <img src="img/smartthings/SmartthingsClientId.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">4. Tap the toggle button next to <b>Connect Smartthings</b>.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">5. You will be redirected to Samsung/Smartthings login page. Enter your credentials and login.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">6. In the authorization screen select the virtual switch <b>aiwatch sensor</b>.</h5>
+                        </div>
+                        <img src="img/smartthings/AuthorizeAiwatch.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">7. Tap the <b>Authorize</b> button at the bottom left of the screen.</h5>
+                        </div>
+                    </div>
+                    <div class="padding-bottom">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">8. If successfully authorized, the <b>Connect Smartthings</b> toggle button will turn green.</h5>
+                        </div>
+                        <img src="img/smartthings/IntegrationSuccess.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
