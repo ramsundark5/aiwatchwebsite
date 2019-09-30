@@ -51,16 +51,19 @@
         padding-top: 0; 
         padding-bottom: 1.25rem
       }
+
+      #mainNav {
+        border-color: transparent;
+        background-color: transparent;
+        background-color: #85408c;
+      }
   </style>
+  <script src="js/include-html.js"></script>
 </head>
 
-<body>
+<body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/ai.png" class="img-fluid" alt="" width="128" height="128"></a>
-            </div>
-        </nav>
+    <div w3-include-html="navigation.html"></div>
         
     <!--Fire tablet-->
     <section class="download" style="padding-bottom: 1.25rem;" id="enable_alexa">
@@ -75,5 +78,17 @@
             </div>
         </div>
     </section>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+    <script>
+        includeHTML();
+    </script>
 </body>
 </html>
